@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex - Detalhes</title>
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css" />
+
+    <link rel="stylesheet" href="assets/css/poke-details.css" />
+
+    <!-- Nosso JS -->
+    <script src="assets/js/poke-details.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" style="height: 2rem">
+        <a href="index.html">
+          <img
+            class="back"
+            src="assets/img/back.png"
+            alt="Retorna a pagina anterior"
+          />
+        </a>
+      </div>
+      <div class="item" style="height: 2rem">
+        <div id="pokemonItem" class="pokemons">
+          <!-- ..... Pokemons here ..... -->
+        </div>
+      </div>
+      <div class="item">
+        <div class="information">
+          <ul class="navigation">
+            <li>
+              <a href="javascript:void(0);" onclick="onClickAbout()">About</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="onClickBase()"
+                >Base Stats</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="onClickEvolution()"
+                >Evolution</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="onClickMoves()">Moves</a>
+            </li>
+          </ul>
+
+          <div id="itemDetails" class="info"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+  </body>
+</html>
